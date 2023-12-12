@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+body{
+    background-color: rgb(36, 36, 36);
+}
+.img-container{
+    transition: transform 0.2s;
+
+    background-color: whitesmoke;
+
+}
+.img-container:hover{
+    transform: scale(1.1);
+}
+.search{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+.search:hover{
+    width: 350px;
+}
+.img-container:hover .overlay-layer{
+    opacity: 1;
+    border-radius: 5px;
+}
+  
+  
+  .overlay-layer {
+    position: absolute;
+    opacity: 0;
+    top: 150px;
+    height: 80px;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and transparency */
+    pointer-events: none; /* Allow click-through on the overlay layer */
+  }
+  
+  .img-container {
+    position: relative;
+   /* Ensure the Card content is above the overlay layer */
+  }
+ 
